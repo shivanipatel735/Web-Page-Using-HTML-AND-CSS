@@ -1,0 +1,502 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+img {
+    max-width: 100%;
+}
+
+/*========== header section ==========*/
+.header_top{
+    display: flex;
+    justify-content: space-between;
+}
+.header_top .nav_item{
+    float: left;
+    display:inline;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    display:inline;
+}
+/* .header_top li a:hover{
+    background-color: #858282;
+    border-radius: 5px;
+} */
+.header_top .logo{
+    display: inline;
+    color: brown;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.header_top .nav_bar{
+    top: 50px;
+    right:2px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden; 
+    /* background-color: #8f8e8e6c; */
+    border-radius: 10px;
+}
+
+/*========== slider section ==========*/
+/* 
+.home-slider{
+    height: 500px;
+    width: 100%;
+}
+.home-slider .slick-next slick-arrow,.slick-prev slick-arrow{
+  color: #dadbdd;
+  padding: 0 20px 0 20px;
+}
+.home-slider img{ 
+    height: 500px;
+    width: 100%;
+}
+.home-slider .banner_containt{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0 ;
+    text-align: center;
+}
+.slick-slide {
+    position: relative;
+}
+.banner_containt h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e7d06a;
+    font-weight:bolder;
+    border-width: 2px; 
+}
+.banner-btn{
+    margin-top: 50px;
+}
+.banner-btn .button{
+    background-color: #f08522;
+    padding-right: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius:0px 8px 0px 8px;
+    height: 40px; 
+    width: 100px; 
+}
+.banner_containt p{
+    font-size: large;
+    color: #e7d06a ;
+    margin-top: 20px;
+} */
+/* Slider Section */
+.slider-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .home-slider-item {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+  }
+  
+  .slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+  }
+  
+  .banner_containt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  
+  .banner_containt h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 10px;
+  }
+  
+  .banner_containt p {
+    font-size: 1.2rem; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  .banner-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e64a19; /* Hover color */
+  }
+
+  @media (max-width: 768px) {
+    .banner_containt h2 {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .banner_containt p {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .button {
+      padding: 8px 16px; /* Smaller buttons for mobile */
+      font-size: 0.9rem;
+    }
+  }
+/*========== flatsome section ==========*/
+
+.flatsome-section .title{
+    display: flex;
+    justify-content: center;
+}
+h2:before, h2:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(131, 129, 128);
+    margin: auto;
+}
+h2:before {
+    margin-right: 10px
+}
+ h2:after {
+    margin-left: 10px
+}
+.flatsome-section h3{
+    margin-top: 40px;
+    text-align: center;
+}
+.flatsome-section{
+    margin-top: 80px;
+}
+.flatsome-section .row{
+    margin-top: 130px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.flatsome-section .row .moretext1, .moretext2, .moretext3 {
+    display: none;
+}
+
+/*========== tab section ==========*/
+.tab_section{
+    padding: 50px;
+    background-image: url(../image/tab\ background.jpg);
+    color: #6af3e8e3;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+.tab_section .home-tab ul{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    list-style: none;
+    margin-bottom: 0;
+}
+.tab_section .home-tab ul li{
+    font-size: 25px;
+    padding: 5px 15px;
+    border-radius: 8px  ;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+.home-tab ul li:hover,
+.home-tab ul li.active{
+     border: 3px groove #6af3e8e3;
+}
+.tab_section .tab-content{
+    display: none;
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 0 0 12px 12px;
+}
+.tab-content:nth-child(1){
+    display: block;
+}
+.tab_section .tabcontent{
+    margin-top: 30px;
+}
+
+/*========== showcase section ==========*/
+.showcase-section{
+    background-color: #dadbdd; 
+}
+.showcase-section .C_detailclass{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.showcase-section .C_detailclass p{
+   padding: 25px;
+}
+.showcase-section .C_detailclass .ShowcaseButton{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #0f6ce7;
+    color: aliceblue;
+}
+.showcase-section .C_detailclass .ShowcaseButton:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    color: #ffffff; /* Change text color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.showcase-section .popup-contant{
+    display: none;
+    position: relative;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #dadbdd;
+    align-items: center;
+}
+.showcase-section .popup-close{
+   background-color: #dadbdd;
+}
+.showcase-section .multi-slides .showcase-img{
+    padding: 20px;
+} 
+
+/*========== accordion section ==========*/
+.accordion_section h2{
+    text-align: center;
+    font-weight: bolder;
+    padding-top:20px;
+    margin: 40px 0 50px 0;
+}
+.accordion-contain{
+    box-shadow: 0px 0px 20px #d4d4d4;
+	margin-bottom:20px;
+	float: left;
+	width: 100%;
+}
+.accordion_section .accordion-label{
+    display: none;
+    position: relative;
+}
+.accordion_section .accordion-label h4{
+    text-align: left;
+    text-transform: capitalize;
+    cursor: pointer;
+	color:#000000;
+	position: relative;
+	margin:0;
+	padding:5px 8px;
+}
+.accordion_section .accordion-label span{
+	position: absolute;
+	right:20px;
+	top:12px;
+	height:25px;
+	width:25px;
+	color:#3343a2;
+	background-color: #ffffff;
+	border-radius:50%;
+	text-align: center;
+	line-height:25px;
+	font-size:13px;
+    cursor: pointer;
+}
+.accordion_section .contain-body{
+    display: none;
+    padding:20px;
+}
+.contain .accordion-contain:nth-child(1) .contain-body{
+    display: block;
+}
+.viewbtn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     min-width: 120px;
+  white-space: nowrap;
+  }
+.accordion_section .viewbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    margin-top: 20px;
+    clear: both; 
+}
+.accordion_section .viewbtn .btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.accordion_section .viewbtn .btn:hover{
+    background-color: #0056b3;
+}
+
+/*========== contact section ==========*/
+
+.contact-section {
+    margin-top: 50px;
+}
+.contact-section h2{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+.home-contact-form ul{
+    background-color: transparent;
+    flex-wrap: wrap;
+    display: flex;
+}
+.home-contact-form li{
+    padding: 15px;
+    width:50%;
+}
+.home-contact-form .input-box .error {
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+/* .error-field class add in jQuery */
+.home-contact-form .input-box .error-field {
+    border: 1px solid red;
+} 
+.home-contact-form .input-box .input-text{
+    width: 100%;
+    height: 40px;    
+}
+.home-contact-form  li.msgbox,li.contact-img{
+    width: 100%;
+}
+.home-contact-form  li.msgbox #textarea{ 
+    height:100px; 
+}
+li.contact-img .contact-detail h5{
+    font-weight:800;
+    color: rgb(12, 87, 12);
+}
+.contact-btn button{
+    width: 100px;
+    text-align: center;
+    height: auto;
+    margin-top: 15px;
+    background-color: #111111;
+    color: white;
+    border-radius: 5px;
+}
+.contact-bar textarea:focus,select:focus,input:focus{
+    background-color: rgba(185, 185, 185, 0.733);
+}
+.file-add {
+    display: inline-block;
+    margin: 10px 10px 0 15px;
+    text-align: center;
+    font-size: 20px;  
+}
+.file-add label{
+    width:100px;
+    height: 105px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+}
+.file-add #files{
+    display:none;
+}
+.add-img{
+    display: flex;
+    gap:5px;    
+}
+.add-img, .plus{
+    font-size: 20px;
+}
+/* .imageThumb and #remove add in jQuery */
+.imageThumb{
+    max-height: 75px;
+    border: 2px solid;
+    padding: 1px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+#remove{
+    background: rgb(136, 136, 136);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: medium;
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+}
+#remove:hover {
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+
+/*========== footer section ==========*/
+
+.footer-main{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: 600;
+}
+.footer-top{
+   padding: 40px;
+}
+.footer-top .footer-links h3{
+    padding-bottom: 8px;
+}
+.footer-top .footer-links ul{
+    background-color: transparent;
+}
+.footer-top .footer-links li{
+    padding-bottom: 5px;
+}
+.footer-main a{
+    color: white;
+}
+.footer-bottom{
+    border-top: 1.5px groove #575858;
+    padding-top: 30px;
+}
+.footer-bottom .footer-social-links ul{
+    background-color: transparent;
+    display: flex;
+}
+.footer-bottom .footer-social-links li{
+    padding-left: 10px;
+}
+.footer-copyright p{
+    text-align: end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
